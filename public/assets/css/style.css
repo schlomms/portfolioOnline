@@ -1,3 +1,14 @@
+/* animations */
+@keyframes blackToWhite {
+    from {background-color: #1A1A1A;}
+    to {background-color: white;}
+}
+
+@keyframes whiteToBlack {
+    from {background-color: white;}
+    to {background-color: #1A1A1A;}
+}
+
 .content {
     min-height: 100vh;
 }
@@ -7,10 +18,26 @@
     background-image: linear-gradient(#1A1A1A, #2C1E1E);
 }
 .skills {
-    height: 100vh;
     background-image: linear-gradient(#2C1E1E, #1A1A1A);
 }
 .invert{
     filter: invert(100%);
+}
+
+.description{
+    height: 100%;
+    display: none;
+}
+
+.blackToWhite {
+    animation-name: blackToWhite;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+.whiteToBlack {
+    animation-name: whiteToBlack;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
 }
 

@@ -9,7 +9,7 @@
                 </div>
                 <div class="col-md-8 p-5">
                     <h1 class="text-white h3">Besoin d'un développeur web et web mobile ?</h1>
-                    <div class="my-5  d-flex flex-column text-white h4">
+                    <div class="my-5 px-5 d-flex flex-column text-white h4 border-left border-danger">
                         <div>Ancien étudiant en license de mathématiques ...</div>
                         <br>
                         <div>Détenteur d'un titre professionnel bac +2 en développement web</div>
@@ -38,39 +38,52 @@
                 <div class="col-md-3 d-flex flex-column align-items-center">
                     <div class="w-50">
                         <a href="{{ asset('assets/cv.pdf') }}" class="text-white" target="_blank">
-                            <img src="{{ asset('assets/images/contact.webp') }}" alt="contact" class="img-fluid">
+                            <img src="{{ asset('assets/images/message.webp') }}" alt="contact" class="img-fluid">
                         </a>
                     </div>
                     <div>
                         Contact
                     </div>
                 </div>
-                <div class="col-md-3"></div>
+                <div class="col-md-3 d-flex flex-column align-items-center">
+                    <div class="w-50">
+                        <a href="{{ asset('assets/cv.pdf') }}" class="text-white" target="_blank">
+                            <img src="{{ asset('assets/images/project.png') }}" alt="projets" class="img-fluid">
+                        </a>
+                    </div>
+                    <div>
+                        Mes projets et code sources
+                    </div>
+                </div>
             </div>
         </div>
     </div>
     <div class="skills">
-        <div class="container-fluid">
-            <div class="h3 text-white text-bolder my-5">
-                Mes Languages de programation
+        <div class="container-fluid py-5">
+            <div class="h3 text-white text-bolder mb-5">
+                Mes compétences
             </div>
-            <div class="row d-flex justify-content-around">
-                <div class="col-md-2">
-                    <img src="{{ asset('assets/images/html.webp') }}" alt="HTML" class="img-fluid">
+            <div class="row">
+                <div class="col-md-1">
+                    <div class="d-flex flex-column justify-content-around">
+                        {% for skill in skills %}
+                            <div id="{{ skill.name }}" class="mb-3 skill" data-description="{{ skill.description }}"
+                                 data-name="{{ skill.name }}">
+                                <img src="{{ asset('assets/images/'~skill.image) }}" alt="{{ skill.name }}"
+                                     class="img-fluid">
+                            </div>
+                        {% endfor %}
+                    </div>
                 </div>
-                <div class="col-md-2">
-                    <img src="{{ asset('assets/images/css.webp') }}" alt="CSS" class="img-fluid">
-                </div>
-                <div class="col-md-2">
-
-                </div>
-                <div class="col-md-2">
-                    <img src="{{ asset('assets/images/js.png') }}" alt="javaScript" class="img-fluid">
-                </div>
-                <div class="col-md-3 d-flex align-items-center">
-                    <img src="{{ asset('assets/images/php.png') }}" alt="PHP" class="img-fluid">
+                <div class="col-md-11 px-5">
+                    <div id="description" class="description rounded d-flex justify-content-center align-items-center">
+                        <small class="text-muted">Cliquez sur une compétence afin d'en savoir plus</small>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
+{% endblock %}
+{% block javascripts %}
+    <script src="{{ asset('assets/js/skills.js') }}"></script>
 {% endblock %}
