@@ -1,5 +1,76 @@
 {% extends 'base.html.twig' %}
 
 {% block body %}
+    <div class="presentation p-3">
+        <div class="container-fluid">
+            <div class="row justify-content-between">
+                <div class="col-md-3">
+                    <img src="{{ asset('assets/images/ampoule.webp') }}" alt="ampoule" class="invert img-fluid">
+                </div>
+                <div class="col-md-8 p-5">
+                    <h1 class="text-white h3">Besoin d'un développeur web et web mobile ?</h1>
+                    <div class="my-5  d-flex flex-column text-white h4">
+                        <div>Ancien étudiant en license de mathématiques ...</div>
+                        <br>
+                        <div>Détenteur d'un titre professionnel bac +2 en développement web</div>
+                        <br>
+                        <div>A la recherche d'un emploi à proximité de Strasbourg où en télétravail</div>
+                        <br>
+                        <div>Ouvert à apprendre d'autre languages ...</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="contact">
+        <div class="container">
+            <div class="row justify-content-around">
+                <div class="col-md-3 d-flex flex-column align-items-center">
+                    <div class="w-50">
+                        <a href="{{ asset('assets/cv.pdf') }}" class="text-white" target="_blank">
+                            <img src="{{ asset('assets/images/cv.png') }}" alt="cv" class="img-fluid">
+                        </a>
+                    </div>
+                    <div>
+                        Mon CV
+                    </div>
+                </div>
+                <div class="col-md-3 d-flex flex-column align-items-center">
+                    <div class="w-50">
+                        <a href="{{ asset('assets/cv.pdf') }}" class="text-white" target="_blank">
+                            <img src="{{ asset('assets/images/contact.webp') }}" alt="contact" class="img-fluid">
+                        </a>
+                    </div>
+                    <div>
+                        Contact
+                    </div>
+                </div>
+                <div class="col-md-3"></div>
+            </div>
+        </div>
+    </div>
+    <div class="skills">
+        <div class="container-fluid">
+            <div class="h3 text-white text-bolder my-5">
+                Mes Languages de programation
+            </div>
+            <div class="row d-flex justify-content-around">
+                <div class="col-md-2">
+                    <img src="{{ asset('assets/images/html.webp') }}" alt="HTML" class="img-fluid">
+                </div>
+                <div class="col-md-2">
+                    <img src="{{ asset('assets/images/css.webp') }}" alt="CSS" class="img-fluid">
+                </div>
+                <div class="col-md-2">
 
+                </div>
+                <div class="col-md-2">
+                    <img src="{{ asset('assets/images/js.png') }}" alt="javaScript" class="img-fluid">
+                </div>
+                <div class="col-md-3 d-flex align-items-center">
+                    <img src="{{ asset('assets/images/php.png') }}" alt="PHP" class="img-fluid">
+                </div>
+            </div>
+        </div>
+    </div>
 {% endblock %}

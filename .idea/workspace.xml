@@ -130,6 +130,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="nodejs_package_manager_path" value="npm" />
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -139,7 +140,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1597068191004</updated>
-      <workItem from="1597068193313" duration="2630000" />
+      <workItem from="1597068193313" duration="9418000" />
     </task>
     <servers />
   </component>
@@ -147,9 +148,17 @@
     <option name="version" value="3" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="376" y="166" width="604" height="396" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1597073845065">
+      <screen x="0" y="27" width="1366" height="676" />
+    </state>
+    <state x="376" y="166" width="604" height="396" key="#com.intellij.fileTypes.FileTypeChooser/0.27.1366.676@0.27.1366.676" timestamp="1597073845065" />
     <state x="374" y="103" width="618" height="522" key="find.popup" timestamp="1597069744927">
       <screen x="0" y="27" width="1366" height="676" />
     </state>
     <state x="374" y="103" width="618" height="522" key="find.popup/0.27.1366.676@0.27.1366.676" timestamp="1597069744927" />
+    <state x="347" y="159" key="run.anything.popup" timestamp="1597075784919">
+      <screen x="0" y="27" width="1366" height="676" />
+    </state>
+    <state x="347" y="159" key="run.anything.popup/0.27.1366.676@0.27.1366.676" timestamp="1597075784919" />
   </component>
 </project>

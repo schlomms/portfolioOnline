@@ -1,0 +1,16 @@
+.content {
+    min-height: 100vh;
+}
+
+.presentation {
+    height: 90vh;
+    background-image: linear-gradient(#1A1A1A, #2C1E1E);
+}
+.skills {
+    height: 100vh;
+    background-image: linear-gradient(#2C1E1E, #1A1A1A);
+}
+.invert{
+    filter: invert(100%);
+}
+
